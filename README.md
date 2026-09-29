@@ -15,7 +15,7 @@
 - **Full FT vs. LoRA vs. QLoRA:** one run in three modes, compared by parameters, memory, time and judged quality.
 - **Data Size & Quality:** LoRA on 200 examples, and on 3,000 examples with 30% of the answers replaced.
 - **Preference Data & Reward Model:** 300 prompts, two SFT samples each, LLM judging, Bradley-Terry model.
-- **DPO:** DPO with LoRA on SFT model (beta = 0.1), against SFT on fixed and judged sets, with a second judge for circularity.
+- **DPO:** DPO with LoRA on SFT (beta = 0.1), against SFT on fixed and judged sets, with a second judge for circularity.
 - **Best-of-N:** 8 SFT candidates re-ranked by the reward model (N = 4, 8), against single sampling and DPO, with cost.
 - **Bonus - LoRA Placement:** attention projections only (q, k, v, o) vs. all linear layers under the same conditions.
 
